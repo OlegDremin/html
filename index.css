@@ -4,34 +4,29 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 500px;
-    height: 300px;
-    /* border: 10px solid; */
-    overflow: hidden;
-}
+.container {}
 
-.column {
-    background: rgb(190, 188, 188);
-    width: 31%;
-    height: 100%;
-    display: inline-block;
-}
-
-.empty-1 {
-    height: 80%;
-}
-
-.gist-1 {
-    height: 20%;
-    background: yellowgreen;
-}
-
-.empty-2 {
+div:not(.container) {
+    width: 40%;
     height: 50%;
+    font-size: 50px;
+    background: red;
+    color: white;
+    float: left;
+    margin: 10px;
 }
 
-.gist-2 {
-    height: 50%;
-    background: yellowgreen;
+div:first-child:not(.container) {
+    width: 70%;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section {
+    height: 20px;
+    background: gray;
 }
