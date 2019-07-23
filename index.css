@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 300px;
+    width: 100wv;
+}
+
+.left-container,
+.right-container {
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+}
+
+.left-container {
+    background: yellowgreen;
+}
+
+.right-container-1 {
+    background: purple;
+    height: 50%;
+}
+
+.right-container-2 {
+    height: 50%;
+}
+
+.right-container-2-1,
+.right-container-2-2 {
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+}
+
+.right-container-2-1 {
+    background: green;
+}
+
+.right-container-2-2>div {
+    height: 50%;
+}
+
+.right-container-2-2>div:first-child {
+    background: blue;
+}
+
+.right-container-2-2>div:last-child {
+    background: gray;
+}
